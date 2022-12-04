@@ -24,8 +24,8 @@ Pull Request
 
 Commit Message
 
-- [Programmers-문제 이름]
-- ex) [Programmers-공 던지기]
+- [Programmers-문제 이름] 이름
+- ex) [Programmers-공 던지기] chaewon
 
 ## 일정표
 
