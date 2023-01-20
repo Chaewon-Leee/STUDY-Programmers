@@ -23,19 +23,13 @@ def factorization(num):
             i += 1
     return result
 
-def find_difference(num, den):
-    for i in num:
-        if i in den:
-            den.remove(i)
-    return den
-
 def solution(a, b):
-    numerator = factorization(a)
-    denominator = factorization(b)
-    simple_faction = list(set(find_difference(numerator, denominator)))
-    
+    numerator = get_factor(a)
+    denominator = get_factor(b)
+    greatest_factor = max(list(set(numerator) & set(denominator)))
+    simple_faction = b//greatest_factor
     finite_decimal = [[],[2],[5],[2,5]]
-    if simple_faction in finite_decimal:
+    if list(set(factorization(simple_faction))) in finite_decimal:
         return 1
     else:
         return 2
