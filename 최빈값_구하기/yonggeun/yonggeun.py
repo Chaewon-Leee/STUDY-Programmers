@@ -12,7 +12,7 @@ def solution(array):
         return -1
     else:
         return number_counter[0][0]
-    
+
 array = [1, 1, 1, 1, 2, 2, 2, 2]
 print(solution(array))
 
