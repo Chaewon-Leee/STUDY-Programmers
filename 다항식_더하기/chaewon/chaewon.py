@@ -19,12 +19,15 @@ def solution(polynomial):
           coefficient_term += coefficient
 
     if not coefficient_term == 0:
-      answer += f"{str(coefficient_term)}x"
+      ## 걔수가 1인 경우, 생력
+      if coefficient_term == 1:
+        answer += f"x"
+      else:
+        answer += f"{str(coefficient_term)}x"
+
       if not consistant_term == 0:
         answer += f" + {str(consistant_term)}"
+
     else: ## coefficient_term == 0
       answer += f"{str(consistant_term)}"
     return answer
-
-print(solution("3x + 0x"))
-print(solution("13 + 2x + 5x"))
