@@ -30,4 +30,5 @@ def solution(polynomial):
 
     else: ## coefficient_term == 0
       answer += f"{str(consistant_term)}"
+
     return answer
