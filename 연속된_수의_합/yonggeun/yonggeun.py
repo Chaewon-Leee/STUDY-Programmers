@@ -19,7 +19,7 @@ def solution(num, total):
         print(result)
         append_to_list(result, num)
         return result
-    
+
 
 num = 4
 total = 14
