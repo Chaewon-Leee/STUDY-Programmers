@@ -1,3 +1,5 @@
+import yonggeun as yong
+
 def solution(board):
   changes = []
   for col, row in enumerate(board):
@@ -19,7 +21,7 @@ def change_num(idx, col):
             [idx+1, col-1], [idx+1, col], [idx+1, col+1]]
   return changes
 
-# print(solution([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]))
-print(solution([[1, 1, 1], [1, 1, 1], [1, 0, 1]]))
+# print(solution([[1, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]))
+# print(solution([[1, 1, 1], [1, 1, 1], [1, 0, 1]]))
 # print(solution([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 1]]))
 # print(solution([[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]))
